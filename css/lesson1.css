@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 8rem;
+    background-color: rgba(225, 225, 225, 0.18);
+    padding: 1rem 2rem;
+}
+
+.card {
+    border: 1px solid rgba(143, 143, 143, 0.47);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.attention-text {
+    color: navy;
+}
+
+.rounded-image {
+    border-radius: 1rem;
+}
+
+header {
+    box-sizing: border-box;
+    background-color: rgba(225, 225, 225, 0.18);
+    padding: 1rem 2rem;
+    height: 4rem;
+    border-bottom: 1px solid rgba(143, 143, 143, 0.47);
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: rgba(225, 225, 225, 0.18);
+    padding: 1rem 2rem;
+    height: 8rem;
+    border-top: 1px solid rgba(143, 143, 143, 0.47);
+}
+
+
