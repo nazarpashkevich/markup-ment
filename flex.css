@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    min-height: 250px;
+}
+
+.grown-block {
+    flex: 1;
+}
+
+.grown-block-2 {
+    flex-grow: 2;
+}
+
+.grown-block > div {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}

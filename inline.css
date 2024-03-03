@@ -1,0 +1,23 @@
+.row {
+    font-size: 0;
+}
+
+.grown-block {
+    width: 33.33%;
+    display: inline-block;
+    height: 250px;
+}
+
+.grown-block-2 {
+    width: 66.66%;
+    display: inline-block;
+    height: 250px;
+}
+
+.with-items > div {
+    height: 33.33%;
+}
+
+.with-items-2 > div {
+    height: 50%;
+}

@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    height: 250px;
+}
+
+.with-items td {
+    height: 33.33%;
+}
+
+.with-items-2 td {
+    height: 50%;
+}
