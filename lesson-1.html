@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Lesson 1 Markup</title>
 
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/lesson1.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
 <main>
     <div class="container">
         <h1>Привет!</h1>
-
+        <a href="#card-block" class="skip">Move to card block</a>
         <p>
           Меня зовут Назар, и я - <b>бэкэнд</b> программист, специализирующийся на PHP. За моей спиной множество
           проектов, где я разрабатывал мощные серверные приложения, но сейчас я решил расширить свой арсенал навыков
@@ -26,8 +27,8 @@
           где каждый HTML-тег и CSS-свойство - это инструменты для создания удивительных вещей.
         </p>
 
-        <img src="https://api.quasa.io/storage/photos/shares/qua_back_front_io.jpg" alt="Разметка CSS"
-             class="rounded-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZr18vRIf2KrMZLPfGSB17yUSGmAEi-1j0fw&usqp=CAU" alt="Разметка CSS"
+             class="rounded-image info-image" width="200">
 
         <h2>Что вы найдете на этом сайте?</h2>
         <p>
@@ -37,7 +38,7 @@
         </p>
 
         <h2>Что я использую:</h2>
-        <ul>
+        <ul class="tools-list">
             <li>HTML - как основу для структуры веб-страниц.</li>
             <li>CSS - чтобы придать страницам стиль и внешний вид.</li>
             <li>PHPStorm</li>
@@ -46,7 +47,7 @@
             </li>
         </ul>
 
-        <div class="card">
+        <div class="card" id="card-block">
             <p>
               Мир верстки - это мир бесконечных возможностей. Здесь можно создавать интерактивные формы, красочные
               графики и анимации, и даже делать адаптивные веб-сайты, которые выглядят отлично на разных устройствах.

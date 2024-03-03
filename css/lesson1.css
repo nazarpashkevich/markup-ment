@@ -48,4 +48,21 @@ footer {
     border-top: 1px solid rgba(143, 143, 143, 0.47);
 }
 
+.info-image {
+    float: left;
+    padding: 10px;
+}
 
+p {
+    text-wrap: normal;
+}
+
+.tools-list {
+    margin-bottom: 300px;
+}
+
+.skip {
+    font-size: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
