@@ -1,0 +1,95 @@
+:root {
+    --menu-bg-color: rgb(253, 253, 255);
+    --menu-border-color: rgb(235, 235, 236);
+}
+
+.main {
+    height: 800px;
+}
+
+.header-menu {
+    display: flex;
+    flex: 1;
+    padding: 0 120px;
+    background-color: var(--menu-bg-color);
+    border-bottom: 1px var(--menu-border-color) solid;
+}
+
+.header-menu-item {
+    padding: 24px 48px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-menu-item:hover {
+    background-color: rgb(243, 243, 244);
+}
+
+.header-menu-item:not(:last-child) {
+    border-right: 1px var(--menu-border-color) solid;
+}
+
+.header-menu-item:hover .header-menu-subitems {
+    display: block;
+}
+
+.header-menu-subitems {
+    position: absolute;
+    display: none;
+    top: 64px;
+    left: 0;
+    background-color: var(--menu-bg-color);
+    border: 1px var(--menu-border-color) solid;
+    width: 100%;
+}
+
+.header-menu-subitem {
+    padding: 12px 24px;
+}
+
+.header-menu-subitem:not(:last-child) {
+    border-bottom: 1px var(--menu-border-color) solid;
+}
+
+.header-menu-subitem:hover {
+    background-color: rgb(243, 243, 244);
+}
+
+.footer {
+    background-color: var(--menu-bg-color);
+    border-top: 1px var(--menu-border-color) solid;
+    height: 200px;
+}
+
+.footer-menu-item {
+    padding: 12px 24px;
+    width:148px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-menu-item:hover .footer-menu-subitems {
+    display: block;
+}
+
+.footer-menu-subitems {
+    position: absolute;
+    display: none;
+    bottom: 40px;
+    left: 0px;
+    background-color: var(--menu-bg-color);
+    border: 1px var(--menu-border-color) solid;
+    width: 100%;
+}
+
+.footer-menu-subitem:not(:last-child) {
+    border-bottom: 1px var(--menu-border-color) solid;
+}
+
+.footer-menu-subitem {
+    padding: 12px 24px;
+}
+
+.footer-menu-subitem:hover {
+    background-color: rgb(243, 243, 244);
+}
