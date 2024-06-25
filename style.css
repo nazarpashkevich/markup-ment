@@ -115,3 +115,252 @@
 .footer-menu-subitem:hover {
     background-color: rgb(243, 243, 244);
 }
+
+.main {
+    padding: 24px 32px;
+    background-color: green;
+    display: flex;
+}
+
+@keyframes gearRotating {
+    0%   {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+#gear {
+    background-color: cornsilk;
+    width: 194px;
+    height: 80px;
+    position: relative;
+    margin-top: 80px;
+    animation: gearRotating 5s ease-in-out infinite;
+}
+
+#gear:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 194px;
+    height: 0;
+
+    border-bottom: 57px solid cornsilk;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
+}
+
+#gear:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -57px;
+    width: 194px;
+    height: 0;
+
+    border-top: 57px solid cornsilk;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
+}
+
+#gear #hole {
+    background-color: green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@keyframes wrenchMoving {
+    0%   {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+#wrench {
+    margin: 0 200px;
+    transform-origin: 120px 97px;
+    animation: wrenchMoving 5s ease-in-out infinite;
+}
+
+#wrench * {
+    background-color: cornsilk;
+}
+
+#wrench-1 {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#wrench-1:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+#wrench-2 {
+    width: 80px;
+    height: 320px;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(10%);
+}
+
+#wrench-3 {
+     background-color: cornsilk;
+     width: 194px;
+     height: 80px;
+     position: relative;
+     margin-top: 80px;
+    border-top: 1px #dfdede solid;
+ }
+
+#wrench-3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 194px;
+    height: 0;
+
+    border-bottom: 57px solid cornsilk;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
+}
+
+#wrench-3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -57px;
+    width: 194px;
+    height: 0;
+
+    border-top: 57px solid cornsilk;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
+}
+
+#wrench-3 .hole {
+    background-color: green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+#wrench-3 .hole:before {
+    position: absolute;
+    content: '';
+    background-color: green;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@keyframes screw {
+    0%   {
+        right: 5px;
+    }
+    50% {
+        right: 12px;
+    }
+    100% {
+        right: 5px;
+    }
+}
+
+#screw {
+    margin: 150px;
+    background-color: cornsilk;
+    height: 80px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    padding: 4px 0 4px 60px;
+}
+
+#screw:before {
+    position: absolute;
+    content: '';
+    left: -20px;
+    bottom: 40px;
+    background-color: cornsilk;
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 0 0 50%;
+}
+
+#screw:after {
+    position: absolute;
+    content: '';
+    left: -20px;
+    top: 40px;
+    background-color: cornsilk;
+    height: 100px;
+    width: 100px;
+    border-radius: 50% 0 0 50%;
+}
+
+.screw-section {
+    border-right: 1px solid rgba(0, 128, 0, 0.25);
+    height: 100%;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    animation: screw 4s linear infinite;
+}
+
+.screw-section:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 7px;
+    border-radius: 50%;
+    background-color: rgba(214, 214, 214, 0.48);
+    height: 100px;
+    width: 100px;
+    animation: screw 4s linear infinite;
+}
+
+.screw-section:after {
+    position: absolute;
+    content: '';
+    top: -2px;
+    right: 12px;
+    border-radius: 50%;
+    background-color: cornsilk;
+    height: 100px;
+    width: 100px;
+}
+
