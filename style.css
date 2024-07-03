@@ -132,18 +132,19 @@
 }
 
 #gear {
-    background-color: cornsilk;
     width: 194px;
     height: 80px;
     position: relative;
     margin-top: 80px;
     animation: gearRotating 5s ease-in-out infinite;
+    border-left: 53px solid cornsilk;
+    border-right: 53px solid cornsilk;
 }
 
 #gear:before {
     content: '';
     position: absolute;
-    left: 0;
+    left: -53px;
     bottom: 80px;
     width: 194px;
     height: 0;
@@ -156,7 +157,7 @@
 #gear:after {
     content: '';
     position: absolute;
-    left: 0;
+    left: -53px;
     bottom: -57px;
     width: 194px;
     height: 0;
@@ -167,15 +168,16 @@
 }
 
 #gear #hole {
-    background-color: green;
-    border-radius: 50%;
     top: 50%;
     left: 50%;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 2;
+    border-radius: 50%;
+    border: 20px solid cornsilk;
+    box-sizing: content-box;
 }
 
 @keyframes wrenchMoving {
@@ -229,19 +231,21 @@
 }
 
 #wrench-3 {
-     background-color: cornsilk;
-     width: 194px;
-     height: 80px;
-     position: relative;
-     margin-top: 80px;
-    border-top: 1px #dfdede solid;
- }
+    background-color: transparent;
+    width: 194px;
+    height: 80px;
+    position: relative;
+    margin-top: 80px;
+    border-left: 53px solid transparent;
+    border-right: 53px solid cornsilk;
+    transform: rotate(90deg);
+}
 
 #wrench-3:before {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 80px;
+    left: -53px;
+    bottom: 79px;
     width: 194px;
     height: 0;
 
@@ -253,8 +257,8 @@
 #wrench-3:after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: -57px;
+    left: -53px;
+    bottom: -56px;
     width: 194px;
     height: 0;
 
@@ -264,28 +268,32 @@
 }
 
 #wrench-3 .hole {
-    background-color: green;
-    border-radius: 50%;
+    background-color: transparent;
     top: 50%;
     left: 50%;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 2;
+    border-radius: 50%;
+    border: 20px solid cornsilk;
+    border-left: 20px solid transparent;
+    box-sizing: content-box;
 }
 
 
 #wrench-3 .hole:before {
     position: absolute;
     content: '';
-    background-color: green;
-    top: 0;
-    left: 50%;
-    height: 100px;
-    width: 50px;
+    top: 40px;
+    left: -23px;
+    height: 83px;
+    width: 68px;
     transform: translate(-50%, -50%);
     z-index: 2;
+    border-top: 15px solid cornsilk;
+    border-bottom: 15px solid cornsilk;
 }
 
 @keyframes screw {
